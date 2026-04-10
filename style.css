@@ -1,0 +1,170 @@
+body {
+  margin:0;
+  font-family: 'Poppins', sans-serif;
+  background: #f4f6f9;
+  background-image: url(nutrition_image.jpg);
+
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.consult-btn {
+  background: #00c896;
+  padding: 8px 18px;
+  border-radius: 20px;
+  color: white;
+}
+
+.consult-btn:hover {
+  background: #00a87c;
+}
+
+.logout-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* HERO */
+.hero {
+  display:flex;
+  justify-content:space-between;
+  padding:40px;
+}
+
+.hero-text h1 {
+  font-size:50px;
+}
+
+.hero-text span {
+  color:green;
+}
+
+.hero-img img {
+  width:300px;
+  border-radius:20px;
+}
+
+/* CAMERA */
+.camera-section {
+  display:flex;
+  justify-content:space-around;
+  padding:40px;
+}
+
+video {
+  width:300px;
+  border-radius:20px;
+}
+
+/* CARDS */
+.card {
+  background:white;
+  padding:10px;
+  margin:10px;
+  border-radius:10px;
+}
+
+/* GLASS */
+.glass {
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
+}
+
+/* BARS */
+.bar {
+  height:10px;
+  background:#ddd;
+}
+
+.bar div {
+  height:100%;
+  background:green;
+  width:0%;
+}
+
+/* ARROW */
+.arrow {
+  font-size:30px;
+  animation: move 1s infinite alternate;
+}
+
+@keyframes move {
+  from { transform:translateX(0); }
+  to { transform:translateX(10px); }
+}
+
+/* FLOATING BUTTON */
+#chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: green;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 10000;
+    transition: transform 0.3s;
+}
+
+#chat-icon:hover {
+    transform: scale(1.1);
+}
+
+/* HIDE CLASS */
+.hidden {
+    display: none !important;
+}
+
+/* ADJUST CHAT CONTAINER FOR BETTER VIEW */
+.chat-container {
+    position: fixed;
+    bottom: 90px; /* Sits above the button */
+    right: 20px;
+    width: 380px;
+    max-height: 500px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chat-header {
+    background: green;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}/* THE BUTTON ON THE RIGHT */
