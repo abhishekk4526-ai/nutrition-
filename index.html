@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Nutrition AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar glass">
+  <h2>🍃 NutriAI</h2>
+
+  <ul class="nav-links">
+    <li><a href="home.html">About</a></li>
+    <li><a href="constal.html">Health Ai</a></li>
+    <li>
+      <a href="consult.html" class="consult-btn">Consult</a>
+    </li>
+  </ul>
+
+  <!-- Logout Button -->
+  <button onclick="logout()" class="logout-btn">
+    <img src="https://cdn-icons-png.flaticon.com/512/1286/1286853.png" width="18">
+    Logout
+  </button>
+</nav>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>We Take Care About <span>Health</span></h1>
+    <p>AI powered nutrition assistant for your daily life</p>
+    <button>Get Started</button>
+  </div>
+
+  <div class="hero-img glass">
+    <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352" />
+  </div>
+</section>
+
+<!-- CAMERA SECTION -->
+<section class="camera-section glass">
+
+  <video id="video" autoplay playsinline></video>
+  <button id="captureBtn">Scan Food</button>
+
+  <div class="arrow">➜</div>
+
+  <!-- DETAILS -->
+  <div class="details">
+    <h3>Nutrition Info</h3>
+
+    <div id="loading" class="hidden">Analyzing...</div>
+
+    <div class="card"><p>Calories</p><div class="bar"><div id="calories"></div></div></div>
+    <div class="card"><p>Protein</p><div class="bar"><div id="protein"></div></div></div>
+    <div class="card"><p>Fiber</p><div class="bar"><div id="fiber"></div></div></div>
+
+    <p id="vitamins"></p>
+    <p id="benefits"></p>
+
+    <div id="freshness"></div>
+  </div>
+
+</section>
+<section class="camera-section glass">
+   </section>
+
+<div id="chat-icon" onclick="toggleChat()">
+    🥗
+</div>
+
+<div class="chat-container hidden" id="aiChatBox">
+    <div class="chat-header">
+        <h3>🥗 NutriBot AI</h3>
+        <span onclick="toggleChat()" style="cursor:pointer">✖</span>
+    </div>
+    <div id="chat-messages"></div>
+    <div class="chat-input">
+        <textarea id="userInput" placeholder="Ask about your diet..." rows="1"></textarea>
+        <button id="sendBtn">Send</button>
+    </div>
+</div>  
+
+<script src="script.js"></script>
+</body>
+</html>
+</nav>
